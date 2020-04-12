@@ -51,7 +51,7 @@ jobs:
           df -h
       - name: 自定义插件
         run: |
-          rm   -rfv  package/lean/autocore
+          #rm   -rfv  package/lean/autocore
            #rm   -rfv  package/lean/luci-app-adbyby-plus
              cd package
            #tar   xvJf  luci-app-docker.tar.xz
@@ -288,7 +288,7 @@ jobs:
       - name: Upload firmware
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt19.07-IPV6 firmware
+          name: OpenWrt18.06-IPV6 firmware
           path: ./bin/targets/
           
       - name: Upload  IPK
@@ -297,4 +297,5 @@ jobs:
           name: OpenWrt18.06 x86 IPK
           path: ./bin/packages/
           
-   
+     
+
