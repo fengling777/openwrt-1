@@ -288,7 +288,7 @@ jobs:
       - name: Upload firmware
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt18.06-IPV6 firmware
+          name: OpenWrt19.07-IPV6 firmware
           path: ./bin/targets/
           
       - name: Upload  IPK
@@ -297,5 +297,4 @@ jobs:
           name: OpenWrt18.06 x86 IPK
           path: ./bin/packages/
           
-     
-
+   
